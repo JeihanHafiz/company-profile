@@ -1,5 +1,11 @@
 import styles from "@/assets/blog.module.css";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+    title: "Our Catalogs | Elan",
+    description: "Elan. Young yet aggresive.",
+  };
 
 export default function Catalog() {
   return (

@@ -3,8 +3,6 @@ import { getBlogs } from "@/libs/blog";
 import { IBlog } from "@/types/blog";
 import styles from "@/components/css/main..module.css";
 import Card from "@/components/card";
-import Link from "next/link";
-import Image from "next/image";
 
 export default async function Home() {
   const data: IBlog[] = await getBlogs();

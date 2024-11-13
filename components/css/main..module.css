@@ -1,3 +1,4 @@
+
 .hero_intro {
   @apply h-[100vh] relative shrink-0 
     flex flex-col justify-center items-center bg-cover bg-center
@@ -98,14 +99,13 @@
 .teams{
     @apply flex flex-wrap
     my-[1.5rem]
-    bg-blue-400
 }
 
 .person{
     @apply flex flex-col
     my-2 mx-auto
     lg:flex-row lg:w-[75%]
-    bg-red-300
+    bg-[#354351] text-[#F8F8F8]
 }
 
 .person_txt{
@@ -113,17 +113,21 @@
 }
 
 .person_img{
-    @apply flex-1
+    @apply flex-1 w-[100%]
     lg:w-[50%] 
 }
 
 .person_txt > h1{
     @apply text-2xl font-semibold
 }
+.person_txt > h3{
+    @apply text-xl font-semibold
+    mb-5
+}
 
 .nav_placer{
     @apply
-    bg-blue-400 h-[25dvh]
+    bg-[#354351] h-[25dvh]
 }
 
 

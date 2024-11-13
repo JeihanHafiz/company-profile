@@ -4,7 +4,7 @@
 
 .nav_placer{
     @apply
-    bg-blue-400 h-[25dvh]
+    bg-[#354351] h-[25dvh]
 }
 
 .blog_container{

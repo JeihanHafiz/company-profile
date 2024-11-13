@@ -8,8 +8,8 @@
 }
 
 .blog_container{
-    @apply w-[75%] mx-auto p-[2rem]
-
+    @apply w-full mx-auto p-[2rem]
+    lg:w-[75%] md:w-[85%] sm:w-[95%]
     bg-pink-300
 }
 
@@ -46,4 +46,51 @@
 
 .company_bio{
     @apply mt-[2rem]
+}
+
+/* catalog */
+.catalogs{
+    @apply 
+    mx-auto
+    w-[75%]
+}
+
+.catalogs > h1{
+    @apply text-[1.5rem]
+    lg:text-[3rem] md:text-[2.5rem] sm:text-[2rem]
+}
+
+.catalog_content{
+    @apply flex flex-wrap justify-center
+    mx-auto
+}
+
+.weap_card{
+    @apply 
+    w-[400px] h-[45dvh] flex flex-col justify-between
+    m-2 p-3
+    border-2 border-zinc-500
+    bg-blue-200
+}
+
+.txt_weap > h1{
+    @apply text-2xl font-bold
+}
+
+.txt_weap > p{
+    @apply text-[1rem]
+}
+
+.weap_prc{
+    @apply flex text-center
+    
+}
+
+.weap_prc > h1{
+    @apply flex-1 p-2 border-2 border-[#354351]
+}
+
+.weap_prc > p{
+    @apply flex-[0.5]
+    bg-black text-white p-2
 }

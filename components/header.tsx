@@ -30,7 +30,7 @@ export default function Header() {
     <header className={`${fix ? `${styles.fixey}` : `${styles.header}`} ${isOpen ? styles.headerOpen : ''}`}>
       <nav className={styles.navbar}>
         <div>
-          <Link href={"/"} onClick={handleSmScrNav}>
+          <Link href={"/"}>
             <span className={styles.logo}>Elan</span>
           </Link>
         </div>

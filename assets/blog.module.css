@@ -37,7 +37,8 @@
 }
 
 .txt_author{
-    @apply w-[75%] mx-auto p-[2rem]
+    @apply  mx-auto p-[2rem] w-full
+    lg:w-[75%]
 }
 
 .txt_author h1{
@@ -50,9 +51,9 @@
 
 /* catalog */
 .catalogs{
-    @apply 
-    mx-auto
-    w-[75%]
+    @apply w-full
+    mx-auto p-2
+    lg:w-[75%] md:w-[85%] sm:w-[95%]
 }
 
 .catalogs > h1{
@@ -62,7 +63,7 @@
 
 .catalog_content{
     @apply flex flex-wrap justify-center
-    mx-auto
+    mx-auto mt-[2rem]
 }
 
 .weap_card{
@@ -70,7 +71,6 @@
     w-[400px] h-[45dvh] flex flex-col justify-between
     m-2 p-3
     border-2 border-zinc-500
-    bg-blue-200
 }
 
 .txt_weap > h1{

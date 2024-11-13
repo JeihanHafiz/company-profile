@@ -2,22 +2,22 @@
 
 .header {
     @apply fixed top-0 left-0 z-10
-    bg-transparent text-zinc-300 
+    bg-transparent text-[#F8F8F8] 
     w-full ease-in duration-300;
   }
   
   .headerOpen{
-    @apply bg-blue-800
+    @apply bg-[#354351]
   }
   
   .fixey{
     @apply fixed top-0 left-0 right-0
-    bg-blue-800 text-zinc-300
+    bg-[#354351] text-[#F8F8F8]
      z-10 duration-300;
   }
   
   .fixey .menus{
-    @apply text-zinc-300 duration-300
+    @apply text-[#F8F8F8] duration-300
   }
   
   .navbar {
@@ -34,7 +34,7 @@
   }
   
   .menus {
-    @apply hidden md:flex font-semibold text-2xl lg:text-2xl text-zinc-200;
+    @apply hidden md:flex font-semibold text-2xl lg:text-2xl text-[#F8F8F8];
   }
   
   .menus li {
@@ -62,11 +62,11 @@
     z-[9]
     /* pr-[2.5rem] */
     w-full h-screen
-    bg-blue-800 text-zinc-200 
+    bg-[#354351] text-[#F8F8F8] 
     ease-in duration-300;
   
     &header{
-      @apply bg-blue-800
+      @apply bg-[#354351]
     }
   }
   
@@ -77,7 +77,7 @@
     z-[9]
     /* pr-[2.5rem] */
     w-full h-screen
-    bg-blue-800 text-zinc-200 
+    bg-[#354351] text-[#F8F8F8] 
     ease-in duration-300;
   
     /* navbar will move at right due to left value of 100% and vice versa */
@@ -91,7 +91,7 @@
   .menus_responsive li {
     @apply py-5 
     hover:text-[yellow] cursor-pointer
-    border-b-[1px] border-zinc-100
+    border-b-[1px] border-[#F8F8F8]
   }
   
   .menus_responsive li a{

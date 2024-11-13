@@ -1,6 +1,8 @@
 import styles from "@/components/css/main..module.css";
 import Image from "next/image";
 
+
+
 export default function Teams() {
   return (
     <section className={styles.team_section}>

@@ -3,6 +3,11 @@ import { getBlogs } from "@/libs/blog";
 import { IBlog } from "@/types/blog";
 import styles from "@/components/css/main..module.css";
 import Card from "@/components/card";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Elan",
+  description: "Elan. Young yet aggresive.",
+};
 
 export default async function Home() {
   const data: IBlog[] = await getBlogs();

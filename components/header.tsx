@@ -31,7 +31,7 @@ export default function Header() {
       <nav className={styles.navbar}>
         <div>
           <Link href={"/"} onClick={handleSmScrNav}>
-            <span className={styles.logo}>Logo</span>
+            <span className={styles.logo}>Elan</span>
           </Link>
         </div>
 

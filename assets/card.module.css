@@ -1,0 +1,66 @@
+.card {
+  @apply
+  w-[300px] mx-5 shadow
+  ;
+}
+
+.img_plchldr {
+  @apply rounded-t-lg h-[200px] w-full relative;
+}
+
+.imgs {
+  @apply object-fill rounded-t-lg
+    /* opacity-[50%] */;
+}
+
+.tags {
+  @apply absolute bg-gray-600 text-blue-600 px-2 m-2 right-0 text-xs rounded-sm;
+}
+
+.card_padding {
+  @apply p-4 my-2
+  flex flex-col justify-between items-start
+  h-[150px]
+  bg-cyan-700;
+}
+
+.title_card {
+  @apply text-zinc-200 font-bold tracking-[-0.015rem]
+  bg-zinc-600
+}
+
+.author_pic{
+    @apply flex items-center my-5
+    bg-cyan-300
+}
+
+.author_pic_size{
+    @apply w-10 h-10 relative
+}
+
+.author_frame{
+    @apply rounded-full object-cover
+}
+
+.author_info{
+    @apply flex-1 min-w-0 ms-4
+    bg-blue-400
+}
+
+.author_name{
+    @apply text-sm font-medium text-gray-900 truncate 
+    /* dark:text-white */
+}
+
+.author_email{
+    @apply text-sm text-red-500 truncate 
+    /* dark:text-gray-400 */
+}
+
+.read_btn{
+    @apply p-2
+    text-[0.75rem] font-semibold
+    border-2 border-zinc-500
+
+    justify-end
+}

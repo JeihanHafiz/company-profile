@@ -1,0 +1,101 @@
+/* everything with md:hidden in it will appear if the resolution in 768px */
+
+.header {
+    @apply fixed top-0 left-0 z-10
+    bg-transparent text-zinc-300 
+    w-full ease-in duration-300;
+  }
+  
+  .headerOpen{
+    @apply bg-blue-800
+  }
+  
+  .fixey{
+    @apply fixed top-0 left-0 right-0
+    bg-blue-800 text-zinc-300
+     z-10 duration-300;
+  }
+  
+  .fixey .menus{
+    @apply text-zinc-300 duration-300
+  }
+  
+  .navbar {
+    @apply flex justify-between items-center
+    max-w-[1366px] mx-auto 
+    h-[12vh] p-4;
+  }
+  
+  .logo {
+    @apply font-bold text-3xl 
+    xl:text-3xl md:text-2xl sm:text-xl;
+  
+    /* it will take the 3xl first */
+  }
+  
+  .menus {
+    @apply hidden md:flex font-semibold text-2xl lg:text-2xl text-zinc-200;
+  }
+  
+  .menus li {
+    @apply mr-4 lg:mr-8 hover:text-[orange];
+  }
+  
+  .nav_burger {
+    @apply flex md:hidden;
+  }
+  
+  .menu_active {
+    /* @apply md:hidden 
+    absolute top-[100px] right-0 left-0 bottom-0
+    flex justify-center items-start text-end
+    w-full h-screen
+    bg-zinc-700 text-zinc-200 
+    ease-in duration-300; 
+    
+    for the full width of responsive navbar*/
+  
+    /* the responsive navbar only takes 50% of website's width */
+    @apply md:hidden 
+    absolute top-[100px] right-0 left-0 bottom-0
+    flex justify-center items-start text-end 
+    z-[9]
+    /* pr-[2.5rem] */
+    w-full h-screen
+    bg-blue-800 text-zinc-200 
+    ease-in duration-300;
+  
+    &header{
+      @apply bg-blue-800
+    }
+  }
+  
+  .menu_inactive {
+    @apply md:hidden 
+    absolute top-[100px] right-0 left-[100%] bottom-0
+    flex justify-center items-start text-end 
+    z-[9]
+    /* pr-[2.5rem] */
+    w-full h-screen
+    bg-blue-800 text-zinc-200 
+    ease-in duration-300;
+  
+    /* navbar will move at right due to left value of 100% and vice versa */
+    /* w-full will cover the website, so adjust whatever it fits */
+  }
+  
+  .menus_responsive {
+    @apply font-semibold text-2xl;
+  }
+  
+  .menus_responsive li {
+    @apply py-5 
+    hover:text-[yellow] cursor-pointer
+    border-b-[1px] border-zinc-100
+  }
+  
+  .menus_responsive li a{
+    @apply mx-8
+  }
+  /* non-tailwind css */
+  

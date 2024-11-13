@@ -1,0 +1,5 @@
+.footer{
+    @apply text-[1rem] font-semibold
+    p-[2rem] w-full mx-auto text-center
+    bg-zinc-500 text-zinc-200
+}

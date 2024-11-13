@@ -1,0 +1,156 @@
+.hero_intro {
+  @apply h-[100vh] relative shrink-0 
+    flex flex-col justify-center items-center bg-cover bg-center
+    px-5 text-center
+    /* bg-zinc-500 */;
+}
+
+.hero_intro > h1 {
+  @apply text-[3rem] text-zinc-200 z-[1] font-bold
+  lg:text-[5rem] md:text-[4rem] sm:text-[3.5rem]
+}
+
+.hero_intro > h3 {
+  @apply text-[1.5rem] text-zinc-200
+  lg:text-[2.5rem] md:text-[2rem] sm:text-[1.75rem]
+}
+
+.vid_hero {
+  @apply absolute inset-0 h-full object-cover -z-[9] brightness-50 hidden
+    lg:block md:block;
+}
+
+.img_hero {
+  @apply absolute inset-0 h-full object-cover -z-[10] brightness-50
+    bg-[url('/images/smartphone-ver.webp')];
+}
+
+/* INFO */
+
+.our_info{
+    @apply bg-red-300
+}
+
+.info{
+    @apply
+    p-[2rem] w-full mx-auto
+    lg:w-[75%] md:w-[85%] sm:w-[95%]
+    bg-zinc-500
+}
+
+.info > h1{
+    @apply text-[2rem] font-semibold
+    lg:text-[3rem] md:text-[2.5rem]
+}
+
+.info > p{
+    @apply my-[1rem]
+}
+
+/* POST */
+
+.post_section{
+    @apply bg-yellow-300
+}
+
+.posts{
+    @apply p-[2rem] w-full mx-auto
+    lg:w-[75%] md:w-[85%] sm:w-[95%]
+}
+
+.txt_box > h1{
+    @apply text-[2rem] font-semibold
+    lg:text-[3rem] md:text-[2.5rem]
+}
+
+.post_box{
+    @apply flex justify-center flex-wrap 
+    my-4
+    bg-pink-500 
+}
+
+.catalog_container{
+    @apply  p-[2rem] w-full mx-auto
+    lg:w-[75%] md:w-[85%] sm:w-[95%]
+}
+
+.catalog_container > h1{
+    @apply text-[2rem] font-semibold
+    lg:text-[3rem] md:text-[2.5rem]
+}
+
+.team_container{
+    @apply  p-[2rem] w-full mx-auto
+    lg:w-[75%] md:w-[85%] sm:w-[95%]
+}
+
+.team_container > h1{
+    @apply text-[2rem] font-semibold
+    lg:text-[3rem] md:text-[2.5rem]
+}
+
+.teams{
+    @apply flex flex-wrap
+    my-[1.5rem]
+    bg-blue-400
+}
+
+.person{
+    @apply flex flex-col
+    my-2 mx-auto
+    lg:flex-row lg:w-[75%]
+    bg-red-300
+}
+
+.person_txt{
+    @apply p-3 flex-1
+}
+
+.person_img{
+    @apply flex-1
+    lg:w-[50%] 
+}
+
+.person_txt > h1{
+    @apply text-2xl font-semibold
+}
+
+.nav_placer{
+    @apply
+    bg-blue-400 h-[25dvh]
+}
+
+
+/* .teams{
+    @apply
+} */
+
+/* .card{
+    @apply w-[400px] h-[400px]
+    mx-5 my-3 p-[1rem]
+    flex flex-col justify-between
+    bg-cyan-400
+}
+
+.card_txt{
+    @apply flex flex-col my-[1rem]
+    bg-purple-300
+}
+
+.card h1{
+    @apply text-2xl font-semibold
+}
+
+.card p{
+    @apply my-[1rem]
+}
+
+.card a{
+    @apply p-[0.75rem] w-fit
+    bg-teal-200
+} */
+
+
+
+
+/* non-tailwind CSS */

@@ -12,6 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontSize: {
+        clampHead: "clamp(2rem, 3vw, 5rem)",
+        clampHeadSmall: "clamp(1rem, 3vw, 2rem)"
+      },
     },
   },
   plugins: [],

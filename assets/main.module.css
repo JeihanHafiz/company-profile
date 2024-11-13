@@ -1,0 +1,10 @@
+/* HERO */
+
+
+.blog_container{
+    @apply flex items-center mx-auto max-w-[1200px] p-4 bg-zinc-200
+}
+
+.card_container{
+    @apply bg-red-700 flex 
+}

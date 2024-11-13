@@ -1,101 +1,122 @@
+// import Image from "next/image";
+import { getBlogs } from "@/libs/blog";
+import { IBlog } from "@/types/blog";
+import styles from "@/components/css/main..module.css";
+import Card from "@/components/card";
+import Link from "next/link";
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
+  const data: IBlog[] = await getBlogs();
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main>
+      <section className={styles.hero_intro}>
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          disablePictureInPicture
+          className={styles.vid_hero}
+          preload="metadata"
+        >
+          {/* <source src="https://www.knds.com/fileadmin/user_upload/content/Homepage/Videos/KNDS-Products-Teaser.mp4" type="video/mp4" /> */}
+          <source src="videos/KNDS-Products-Teaser.mp4" type="video/mp4" />
+        </video>
+        <div className={styles.img_hero}></div>
+        <h1>We Are Elan</h1>
+        <h3>Dedicated to protect ground forces for over than 2 decades.</h3>
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* profile */}
+      <section className={styles.our_info}>
+        <div className={styles.info}>
+          <h1>Our Company</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            exercitationem eveniet mollitia aperiam suscipit quae quidem, minus
+            minima rem animi molestiae debitis impedit veritatis et, ex ipsam?
+            Temporibus, porro saepe quaerat veniam, quia exercitationem harum,
+            aperiam consequatur odio enim fuga praesentium. Error quas dolorum
+            repudiandae, reprehenderit molestiae quis, labore nemo eum minima
+            repellat ut sit. Voluptatem hic officiis distinctio nulla pariatur
+            quasi atque voluptatum qui quae porro id, rerum corporis vitae nemo
+            sit totam praesentium accusantium ipsum. Explicabo nesciunt culpa,
+            expedita cupiditate illum ex esse! Non similique optio eos neque ad
+            omnis voluptate modi est eum. Aut quasi rerum fugit!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+            beatae similique sit quasi quos. Asperiores earum provident
+            architecto magni, id reiciendis dolore aperiam numquam in aut error
+            non laborum expedita placeat laudantium minus cupiditate vel
+            pariatur quo accusamus? Amet molestiae ratione aliquid consequuntur
+            cumque excepturi nemo veritatis iste consequatur. Voluptatum aliquam
+            voluptatem, veniam nihil provident commodi ab nam aliquid pariatur
+            quidem mollitia quas odit totam illo esse omnis. Consequatur odio
+            libero, accusantium recusandae fuga ipsa iusto cumque laborum minima
+            odit expedita sed fugiat quam tenetur, ex adipisci nisi, in fugit
+            iste dignissimos minus sequi. Optio, quos. Quaerat blanditiis
+            laborum fugiat.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+            magnam reprehenderit nobis ea nam cum soluta itaque id animi, quos
+            tempore voluptas quod numquam voluptate architecto deserunt
+            temporibus reiciendis corporis sed ipsa voluptatibus. Praesentium,
+            molestias velit possimus voluptate tenetur eveniet molestiae
+            deserunt! Sunt corporis eos exercitationem voluptatem illum ducimus
+            obcaecati amet dolorum. Sequi provident assumenda nam molestiae
+            cupiditate! Inventore dignissimos non sapiente. Repudiandae repellat
+            odio accusantium labore illum molestias, iste neque, quo officiis
+            autem impedit quisquam nihil velit molestiae dolorem vero porro
+            provident et quaerat iusto. Voluptates corrupti itaque vel
+            exercitationem sint sequi, ut autem ea ipsa ex doloremque ipsum?
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      {/* catalogs */}
+      {/* <section className={styles.catalog_section}>
+        <div className={styles.catalog_container}>
+          <h1>Our Catalogs</h1>
+          
+        </div>
+      </section> */}
+
+      {/* press release */}
+      <section className={styles.post_section}>
+        <div className={styles.posts}>
+          <div className={styles.txt_box}>
+            <h1>Press Release</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consequuntur doloremque deserunt corrupti, deleniti ullam
+              laudantium architecto quod, esse maxime omnis beatae error fugit
+              voluptas vitae illo reprehenderit expedita, aspernatur voluptates.
+            </p>
+          </div>
+          <div className={styles.post_box}>
+            {data.map((item, idx) => {
+              return (
+                <div key={idx}>
+                  {/* all of the blog database are saved here */}
+                  <Card
+                    category={item.fields.category}
+                    title={item.fields.title}
+                    thumbnail={item.fields.thumbnail.fields.file.url}
+                    author={item.fields.author.fields.name}
+                    email={item.fields.author.fields.email}
+                    avatar={item.fields.author.fields.avatar.fields.file.url}
+                    slug={item.fields.slug}
+                    content={item.fields.content}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }

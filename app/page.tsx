@@ -95,7 +95,7 @@ export default async function Home() {
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Consequuntur doloremque deserunt corrupti, deleniti ullam
-              laudantium architecto quod, esse maxime omnis beatae error fugit
+              laudantium architecto quod, esse maxime omnis beatae error  fugit
               voluptas vitae illo reprehenderit expedita, aspernatur voluptates.
             </p>
           </div>

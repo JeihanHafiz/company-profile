@@ -10,11 +10,17 @@
 .blog_container{
     @apply w-full mx-auto p-[2rem]
     lg:w-[75%] md:w-[85%] sm:w-[95%]
-    bg-pink-300
+    
 }
 
 .blog_container h1{
     @apply text-3xl font-semibold
+    pb-3
+}
+
+.blog_container > h2{
+    @apply text-[1.25rem] font-semibold
+    my-4
 }
 
 .tag{

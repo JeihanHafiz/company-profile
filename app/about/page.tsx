@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-
+import styles from '@/assets/blog.module.css'
 export const metadata: Metadata = {
   title: "About Us | Elan",
   description: "Elan. Young yet aggresive.",
@@ -8,6 +8,8 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <section>
+      <div className={styles.nav_placer}></div>
+      <div className={styles.blog_container}>
       <h1>About us</h1>
       <p>
         Formed by the steady hand of Marcel Durand, Elan has successfully
@@ -47,7 +49,9 @@ export default function About() {
       </p>
 
       <h2>Company Culture</h2>
-      <p>Elan, which is based on french word élan, is the meaning of be agressive, energetic, and enthusiasm. We, at Elan, are weapon and firearms enthusiast </p>
+      <p>Elan, which is based on french word élan, is the meaning of be agressive, energetic, and enthusiasm. We, at Elan, are weapon and firearms enthusiast works together to produce and introduce our units for public, military and law enforcement.</p>
+      <p>To improve life&apos;s quality, one should be precise; not only applies to our product, but also to our working ethos.</p>
+      </div>
     </section>
   );
 }

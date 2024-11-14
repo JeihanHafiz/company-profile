@@ -63,12 +63,9 @@ export default async function Home() {
       <section className={styles.post_section}>
         <div className={styles.posts}>
           <div className={styles.txt_box}>
-            <h1>Press Release</h1>
+            <h1>Press Releases</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Consequuntur doloremque deserunt corrupti, deleniti ullam
-              laudantium architecto quod, esse maxime omnis beatae error  fugit
-              voluptas vitae illo reprehenderit expedita, aspernatur voluptates.
+              Don&apos;t miss our latest news about our product, joint collaboration, and many more.
             </p>
           </div>
           <div className={styles.post_box}>

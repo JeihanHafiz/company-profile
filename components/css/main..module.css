@@ -11,7 +11,7 @@
   lg:text-[5rem] md:text-[4rem] sm:text-[3.5rem]
 }
 
-.hero_intro > h3 {
+.hero_intro > h2 {
   @apply text-[1.5rem] text-[#F8F8F8]
   lg:text-[2.5rem] md:text-[2rem] sm:text-[1.75rem]
 }
@@ -29,7 +29,8 @@
 /* INFO */
 
 .our_info{
-    @apply bg-[#F8F8F8]
+    @apply bg-[#354351]
+    text-[#F8F8F8]
 }
 
 .info{
@@ -45,7 +46,7 @@
 }
 
 .info > p{
-    @apply my-[1rem]
+    @apply my-[1rem] text-[1.25rem]
 }
 
 /* POST */
@@ -128,6 +129,33 @@
 .nav_placer{
     @apply
     bg-[#354351] h-[25dvh]
+}
+
+.review_section{
+    @apply w-full mx-auto p-[2rem]
+    lg:w-[75%] md:w-[85%] sm:w-[95%];
+}
+
+.review_section > h1{
+    @apply text-[2rem] font-semibold
+}
+
+.review_box{
+    @apply flex flex-col
+    my-3
+}
+
+.review{
+    @apply p-2 my-2
+    border-2 border-zinc-600
+}
+
+.review > h1{
+    @apply text-[1.5rem] font-semibold
+}
+
+.review > p{
+    @apply italic
 }
 
 

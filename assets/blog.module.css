@@ -1,103 +1,95 @@
-.blog{
-    @apply bg-zinc-500
+
+
+.nav_placer {
+  @apply bg-[#354351] h-[25dvh];
 }
 
-.nav_placer{
-    @apply
-    bg-[#354351] h-[25dvh]
+.blog_container {
+  @apply w-full mx-auto p-[2rem]
+    lg:w-[75%] md:w-[85%] sm:w-[95%];
 }
 
-.blog_container{
-    @apply w-full mx-auto p-[2rem]
-    lg:w-[75%] md:w-[85%] sm:w-[95%]
-    
+.blog_container h1 {
+  @apply text-3xl font-semibold
+    pb-3;
 }
 
-.blog_container h1{
-    @apply text-3xl font-semibold
-    pb-3
+.blog_container > h2 {
+  @apply text-[1.25rem] font-semibold
+    my-4;
 }
 
-.blog_container > h2{
-    @apply text-[1.25rem] font-semibold
-    my-4
-}
-
-.tag{
-    @apply font-semibold w-fit text-[0.85rem]
+.tag {
+  @apply font-semibold w-fit text-[0.85rem]
     px-[0.5rem] py-[0.25rem] my-[0.5rem]
-    bg-zinc-700 text-zinc-200
+    bg-zinc-700 text-zinc-200;
 }
 
-.article_content{
-    @apply my-5
-    bg-blue-100
+.article_content {
+  @apply my-5;
 }
 
-.share_container{
-    @apply bg-zinc-300 w-fit
+.share_container {
+  @apply  w-fit;
 }
 
-.author_container{
-    @apply bg-zinc-200
+.author_container {
+  @apply bg-zinc-200;
 }
 
-.txt_author{
-    @apply  mx-auto p-[2rem] w-full
-    lg:w-[75%]
+.txt_author {
+  @apply mx-auto p-[2rem] w-full
+    lg:w-[75%];
 }
 
-.txt_author h1{
-    @apply text-2xl
+.txt_author h1 {
+  @apply text-2xl;
 }
 
-.company_bio{
-    @apply mt-[2rem]
+.company_bio {
+  @apply mt-[2rem];
 }
 
 /* catalog */
-.catalogs{
-    @apply w-full
+.catalogs {
+  @apply w-full
     mx-auto p-2
-    lg:w-[75%] md:w-[85%] sm:w-[95%]
+    lg:w-[75%] md:w-[85%] sm:w-[95%];
 }
 
-.catalogs > h1{
-    @apply text-[1.5rem]
-    lg:text-[3rem] md:text-[2.5rem] sm:text-[2rem]
+.catalogs > h1 {
+  @apply text-[1.5rem]
+    lg:text-[3rem] md:text-[2.5rem] sm:text-[2rem];
 }
 
-.catalog_content{
-    @apply flex flex-wrap justify-center
-    mx-auto mt-[2rem]
+.catalog_content {
+  @apply flex flex-wrap justify-center
+    mx-auto mt-[2rem];
 }
 
-.weap_card{
-    @apply 
-    w-[400px] h-[45dvh] flex flex-col justify-between
+.weap_card {
+  @apply w-[400px] h-[45dvh] flex flex-col justify-between
     m-2 p-3
-    border-2 border-zinc-500
+    border-2 border-zinc-500;
 }
 
-.txt_weap > h1{
-    @apply text-2xl font-bold
+.txt_weap > h1 {
+  @apply text-2xl font-bold;
 }
 
-.txt_weap > p{
-    @apply text-[1rem]
+.txt_weap > p {
+  @apply text-[1rem];
 }
 
-.weap_prc{
-    @apply flex text-center
-    
+.weap_prc {
+  @apply flex text-center;
 }
 
-.weap_prc > h1{
-    @apply flex-1 p-2 border-2 border-[#354351]
+.weap_prc > h1 {
+  @apply flex-1 p-2 border-2 border-[#354351];
 }
 
-.weap_prc > p{
-    @apply flex-[0.5]
-    bg-black text-white p-2
+.weap_prc > p {
+  @apply flex-[0.5]
+    bg-black text-white p-2;
 }
-

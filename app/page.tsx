@@ -54,7 +54,7 @@ export default async function Home() {
           </div>
           <div className={styles.review}>
             <h1>Joseph Stiller</h1>
-            <p>We decided to procure their 25mm and going to test-fire from our KBA mounted in Valhalla, and surprisingly the velocity is very fast while being precise on 100th shots. Can be useful against oncoming</p>
+            <p>We decided to procure their 25mm and going to test-fire from our KBA mounted in Valhalla, and surprisingly the velocity is very fast while being precise on 100th shots. Can be useful against oncoming flying targets at medium speed.</p>
           </div>
         </div>
       </section>

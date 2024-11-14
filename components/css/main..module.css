@@ -120,7 +120,7 @@
 .person_txt > h1{
     @apply text-2xl font-semibold
 }
-.person_txt > h3{
+.person_txt > h2{
     @apply text-xl font-semibold
     mb-5
 }

@@ -1,6 +1,11 @@
 import styles from "@/components/css/main..module.css";
+import { Metadata } from "next";
 import Image from "next/image";
 
+export const metadata: Metadata = {
+  title: "Our Teams | Elan",
+  description: "Elan. Young yet aggresive.",
+};
 
 
 export default function Teams() {
@@ -27,7 +32,7 @@ export default function Teams() {
             />
             <div className={styles.person_txt}>
               <h1>Michel Durand</h1>
-              <h3>Head of Elan</h3>
+              <h2>Head of Elan</h2>
               <p>Marcel has been a part of Tactique Verte in Toulon for 15 years as a senior manager. However, prior to that, he was involved in a project to improve the general welfare in a city in the country of Kastovia for 8 years. With the experience he gained, he began to leave Tactique Verte and seek new challenges. Therefore, Elan was born from Marcel&apos;s creative hand.</p>
             </div>
           </div>
@@ -42,7 +47,7 @@ export default function Teams() {
             />
             <div className={styles.person_txt}>
               <h1>Boris Stoyan</h1>
-              <h3>CEO of Elan</h3>
+              <h2>CEO of Elan</h2>
               <p>As one of the longest-standing members of Elan, Boris Stoyan began his career at Kastovia Arms, where he worked for 35 years. In addition to that, he was involved in the latest tank project as the designer of the coaxial machine gun, a role in which he proved to be highly successful. Boris Stoyan has now joined Elan as CEO.</p>
             </div>
           </div>
@@ -57,7 +62,7 @@ export default function Teams() {
             />
             <div className={styles.person_txt}>
               <h1>Martin Jean-Pierre</h1>
-              <h3>Senior Manager of Elan</h3>
+              <h2>Senior Manager of Elan</h2>
               <p>Martin Jean-Pierre, also known as Marty, has worked in the French government for 10 years as an official contractor in Rennes. In addition, he served as a junior manager at the Pelington defence equipment factory for 12 years. Eventually, he became part of Elan as a senior manager.</p>
             </div>
           </div>
